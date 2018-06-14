@@ -1,0 +1,484 @@
+/*---- Polices ----*/
+
+
+@font-face 
+{
+    font-family: 'berylium';
+    src: url('../fonts/Berylium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face 
+{
+    font-family: 'helvetica';
+    src: url('../fonts/Helvetica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face 
+{
+    font-family: 'opensanslight';
+    src: url('../fonts/OpenSans-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face 
+{
+    font-family: 'opensansregular';
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*---- General ----*/
+
+h1, h2
+{
+    text-align:center;
+}
+h2
+{
+    font-family: 'opensanslight';
+}
+
+a
+{
+    text-decoration: none;
+}
+
+body
+{
+    margin: 0;
+    margin:0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*---- Header ----*/
+
+#header
+{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(104,96,66,0.7);
+   
+}
+
+#header img
+{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding:0px;
+    
+}
+
+/*---- Menu de navigation et pagination ----*/
+
+.navbox
+{
+    background-color: black;
+     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 12px solid rgba(104,96,66,0.7);
+    border-top: 5px solid rgba(104,96,66,0.7);
+    margin-right: 5px solid rgba(104,96,66,0.7);
+    margin-left: 5px solid rgba(104,96,66,0.7);   
+}
+
+#book
+{
+    width: 50px;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.navigation
+{
+    height: 50px; 
+    width:75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-top: 1px solid white;
+    border-radius: 5px;
+}
+
+.navigation a 
+{
+    padding: 10px;
+    text-decoration: none;
+    color:white;
+    font-family: 'opensanslight';
+    border-bottom: 1px white solid;
+    border-radius: 5px;
+}
+
+.navigation a:hover
+{
+    background-color: rgba(104,96,66,0.7);
+}
+
+#pagination
+{
+    width:75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    left:0;
+    right:0;
+}
+
+#pagination a 
+{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color:white;
+    background-color: rgb(104,96,66);
+    font-family: 'opensanslight';
+    margin: 0px 10px 0px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#pagination a:hover
+{
+    border: 1px solid white;
+}
+
+/*---- Chapitre, contenant et contenu, et séparateur ----*/
+
+.paper
+{
+    width:100%;
+    margin:auto;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chapter
+{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding: 0px 35px 0px 25px;
+    border-right: 2px solid rgba(69,75,84,0.5);
+    border-left: 2px solid rgba(69,75,84,0.5);
+}
+
+.chapter h2
+{
+    padding: 10px;
+    font-size: 2em;
+    margin: 0px 0px 30px 0px;
+    font-family: 'opensansregular';
+    color: rgba(69,75,84,1);
+    width: 100%;
+    border-bottom: rgba(69,75,84,0.5) 1px solid;
+    border-top: rgba(69,75,84,0.5) 1px solid;
+}
+
+.chapter p
+{
+    font-family: 'opensanslight';
+    margin-top:0px;
+}
+
+.mountain
+{
+    height: 50px;
+    width: auto;
+}
+
+.mountainbox
+{
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+/*---- Footer ----*/
+
+#footer
+{
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#textFooter
+{
+    color: white;
+    font-family: 'opensanslight';
+    margin-right: 20px;
+    text-align: right;
+}
+
+#boutonAdmin
+{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color:white;
+    background-color: rgb(104,96,66);
+    font-family: 'opensanslight';
+    border-radius: 5px;
+    height: 20px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+#boutonAdmin a
+{
+    text-decoration: none;
+    color:white;
+}
+
+#boutonAdmin a:hover
+{
+    text-decoration: none;
+    color:red;
+}
+
+/*---- Formulaire de connexion admin ----*/
+
+#loginform
+{
+    margin: auto;
+}
+
+#loginform p
+{
+    color:white;
+    font-family: 'opensanslight';
+}
+
+/*---- Boutons suppression et modification d'articles ----*/
+
+
+#adminboutons
+{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    margin: auto;
+    left:0;
+    right:0;
+    background-color: white;
+}
+
+#adminboutons a 
+{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color:white;
+    background-color: rgb(104,96,66);
+    font-family: 'opensanslight';
+    margin: 0px 10px 0px 10px;
+    border-radius: 5px;
+}
+
+/*---- Section commentaires ----*/
+
+.comments 
+{
+    background-color: rgba(69,75,84,0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.comments p
+{
+    color: white;
+    font-family: 'opensanslight';
+    margin-left: 10px;
+}
+
+.comments a
+{
+    color: white;
+    font-family: 'opensanslight';
+    margin-left: 10px;
+    color:crimson;
+}
+
+.comments h2
+{
+    color: white;
+    font-family: 'opensanslight';
+    width: 100%;
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
+    padding: 10px;
+}
+
+.comments input
+{
+    margin: 10px;
+}
+
+.comments textarea
+{
+    margin: 10px;
+}
+
+.comments label
+{
+    color: white;
+    font-family: 'opensanslight';
+    margin: 10px;
+
+}
+
+/*---- Section sommaire ----*/
+
+.chaplist
+{
+    margin: auto;
+    color: white;
+    font-family: 'opensanslight';
+    padding: 10px;
+}
+
+.chaplist a
+{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.chaplist a:hover
+{
+    background-color: rgba(104,96,66,0.7);
+}
+
+/*---- Section modification de commentaire ----*/
+
+#commentModif
+{
+    color: white;
+    font-family: 'opensanslight';
+    margin: auto;
+}
+
+#formcomment
+{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#formcomment textarea
+{
+    margin: auto;
+}
+
+#formbox
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/*---- Section éditeur de chapitre ----*/
+
+.titlemce
+{
+    color: white;
+    font-family: 'opensanslight';
+    padding: 15px;   
+}
+
+#form1 input
+{
+    margin: 15px;
+    width: 300px;
+    height: 50px;
+}
+
+#chapitre
+{
+    width: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+/*---- Media queries ----*/
+
+@media all and (max-width: 760px)
+    
+{
+
+/*---- Passage des menus en colonnes ----*/
+    
+.navigation
+{
+    height: 220px; 
+    width:75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-top: 1px solid white;
+    border-radius: 5px;
+}
+    
+.navigation a 
+{
+    padding: 10px;
+    text-decoration: none;
+    color:white;
+    font-family: 'opensanslight';
+    border-bottom: 1px white solid;
+    justify-content: center;
+    margin: auto;
+    border-radius: 5px;
+}
+  
+}
